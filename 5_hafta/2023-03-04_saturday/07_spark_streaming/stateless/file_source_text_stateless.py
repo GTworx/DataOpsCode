@@ -22,8 +22,8 @@ streamingQuery = (lines2
 .format("console")
 .outputMode("append")
 .trigger(processingTime="1 second")
-.option("numRows", 4)
-.option("truncate", False)
+.option("numRows",4)
+.option("truncate",False)
 .option("checkpointLocation", checkpointDir)
 .start())
 
